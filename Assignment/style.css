@@ -1,12 +1,45 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(3, 1.5fr);
+    grid-template-rows: 0.2fr 1.5fr 0.2fr;
+    grid-template-areas: "header header header"
+                         "nav main main"
+                         "footer footer footer";
+}
+
+header{
+    grid-area: header;
+    background: cadetblue;
+}
+nav{
+    grid-area: nav;
+    background: blue;
+}
+
+nav li{
+    margin-bottom: 5em;
+}
+
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+main{
+    grid-area: main;
+    background: blueviolet;
+}
+
+footer{
+    grid-area: footer;
+    background: brown;
 }
 
 ul{
     list-style-type: none;
-    float: right;
+    float: left;
+    padding: 0.5em;
 }
 
-ul li{
-    display: inline;
-}
