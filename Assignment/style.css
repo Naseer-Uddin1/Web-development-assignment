@@ -4,32 +4,35 @@ body{
     height: 100vh;
     grid-template-columns: repeat(3, 1.5fr);
     grid-template-rows: 0.2fr 1.5fr 0.2fr;
-    grid-template-areas: "header header header"
-                         "nav main main"
+    grid-template-areas: "nav nav nav"
+                         "header header header"
                          "footer footer footer";
 }
 
 header{
     grid-area: header;
     background: cadetblue;
+    text-align: center;
 }
+
 nav{
     grid-area: nav;
     background: blue;
+    padding: 1em;
 }
 
 nav li{
-    margin-bottom: 5em;
+    display: inline-block;
 }
 
 nav a{
     text-decoration: none;
     text-transform: uppercase;
+    padding: 1em;
 }
 
-main{
-    grid-area: main;
-    background: blueviolet;
+nav a:hover{
+    color: lightblue;
 }
 
 footer{
@@ -39,7 +42,6 @@ footer{
 
 ul{
     list-style-type: none;
-    float: left;
-    padding: 0.5em;
+    text-align: center;
 }
 
