@@ -13,12 +13,41 @@ header{
     grid-area: header;
     background: cadetblue;
     text-align: center;
+    font-size: 2em;
+}
+
+header p1{
+    font-size: 1em;
 }
 
 nav{
     grid-area: nav;
     background: blue;
     padding: 1em;
+}
+
+nav ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    text-align: center;
+}
+
+nav ul li{
+    position: relative;
+}
+
+nav > ul > li{
+    position: relative;
+}
+
+nav ul ul{
+    position: absolute;
+    display: none;
+    background-color: green;
+    padding: 0;
+    width: 100%;
+    text-align: left;
 }
 
 nav li{
@@ -44,4 +73,22 @@ ul{
     list-style-type: none;
     text-align: center;
 }
+
+nav ul ul{
+    position: absolute;
+    display: none;
+    background-color: green;
+    padding: 0;
+    width: 100%;
+}
+
+nav > ul > li{
+    position: relative;
+}
+
+nav > ul > li:hover ul{
+    display: block;
+    margin: 10px;
+}
+
 
