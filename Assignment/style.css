@@ -1,8 +1,10 @@
 body{
+    background: url(Images/circuitboard.jpg);
+    background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
     display: grid;
     height: 100vh;
-    grid-template-columns: repeat(3, 1.5fr);
+    grid-template-columns: 33% 33% 33%;
     grid-template-rows: 0.2fr 1.5fr 0.2fr;
     grid-template-areas: "nav nav nav"
                          "header header header"
@@ -11,7 +13,6 @@ body{
 
 header{
     grid-area: header;
-    background: cadetblue;
     text-align: center;
     font-size: 2em;
 }
@@ -22,7 +23,6 @@ header p1{
 
 nav{
     grid-area: nav;
-    background: blue;
     padding: 1em;
 }
 
@@ -55,7 +55,7 @@ nav li{
 }
 
 nav a{
-    text-decoration: none;
+    text-decoration: underline;
     text-transform: uppercase;
     padding: 1em;
 }
@@ -91,4 +91,49 @@ nav > ul > li:hover ul{
     margin: 10px;
 }
 
+.contact-form{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.container{
+    width: 90%;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.contact-info{
+    font-size: 20px;
+    letter-spacing: 5px;
+    color: white;
+    line-height: 50px;
+    margin-left: 50px;
+}
+
+input{
+    padding: 10px;
+    margin: 10px;
+    width: 70%;
+    background-color: white;
+    opacity: 0.7;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+textarea{
+    padding: 10px;
+    margin: 10px;
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    opacity: 0.7;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.button{
+    cursor: pointer;
+}
 
