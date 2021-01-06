@@ -1,24 +1,77 @@
 body{
+    margin: 0;
+    padding: 0;
     background: url(Images/circuitboard.jpg);
-    background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    margin: 0;
+    font-weight: 400;
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+li{
+    color: white;
+}
+
+h2{
+    margin: 0;
+    font-weight: 400;
+    display: inline;
+}
+
+.box{
+    background: black;
+    opacity: 0.8;
+    width: 50rem;
+    padding: 3rem;
+    margin: 1 rem auto;
+    border-radius: 0.5rem;
+}
+
+.header{
     display: grid;
-    height: 100vh;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 0.2fr 1.5fr 0.1fr;
-    grid-template-areas: "nav nav nav"
-                         "header header header"
-                         "footer footer footer";
+    grid-template-columns: 40% 60%;
 }
 
-header{
-    grid-area: header;
-    text-align: center;
-    font-size: 2em;
+.header-left{
+    display: grid;
+
+    align-items: center;
+    font-size: 2rem;
 }
 
-header p1{
-    font-size: 1em;
+.first-name{
+    font-size: 60px;
+    margin: 0;
+}
+
+.last-name {
+    font-size: 50px;
+    font-weight: 100;
+    margin: 0;
+}
+
+.header-right{
+    width: 100%;
+    display: grid;
+    justify-items: end;
+}
+
+.header-right p{
+    display: inline;
+}
+
+.grey{
+    background: grey;
+    color: white;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
 }
 
 nav{
@@ -69,11 +122,6 @@ footer{
     background: brown;
 }
 
-ul{
-    list-style-type: none;
-    text-align: center;
-}
-
 nav ul ul{
     position: absolute;
     display: none;
@@ -90,6 +138,3 @@ nav > ul > li:hover ul{
     display: block;
     margin: 10px;
 }
-
-
-
