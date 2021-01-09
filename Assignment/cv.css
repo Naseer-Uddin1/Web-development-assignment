@@ -1,9 +1,9 @@
 body{
-    margin: 20px;
-    padding-left: auto;
+    margin: 0em;
+    padding-left: 0em;
     background: url(Images/bg.jpg);
     background-size: cover;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 h1{
@@ -22,7 +22,7 @@ li{
 
 h2{
     margin: 0;
-    font-weight: 400;
+    font-weight: bold;
     display: inline;
 }
 
@@ -30,9 +30,10 @@ h2{
     background: black;
     opacity: 0.8;
     width: 70%;
-    padding: 30px;
-    margin: 1 rem auto;
+    padding: 1.5em;
+    margin: 2em;
     border-radius: 0.5rem;
+    float: center;
 }
 
 .header{
@@ -42,18 +43,17 @@ h2{
 
 .header-left{
     display: grid;
-
     align-items: center;
     font-size: 2rem;
 }
 
 .first-name{
-    font-size: 60px;
+    font-size: 1.5em;
     margin: 0;
 }
 
 .last-name {
-    font-size: 50px;
+    font-size: 1.4em;
     font-weight: 100;
     margin: 0;
 }
@@ -78,6 +78,9 @@ h2{
 nav{
     grid-area: nav;
     padding: 1em;
+    background: black;
+    opacity: 0.5;
+    width: 100%;
 }
 
 nav ul{
@@ -85,6 +88,7 @@ nav ul{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     text-align: center;
+    letter-spacing: 0.4em;
 }
 
 nav ul li{
@@ -95,10 +99,15 @@ nav > ul > li{
     position: relative;
 }
 
+nav ul > li{
+    line-height: 30px;
+}
+
 nav ul ul{
     position: absolute;
     display: none;
-    background-color: green;
+    background-color: black;
+    opacity: 0.5;
     padding: 0;
     width: 100%;
     text-align: left;
@@ -109,24 +118,27 @@ nav li{
 }
 
 nav a{
-    text-decoration: underline;
+    text-decoration: none;
     text-transform: uppercase;
+    color: white;
     padding: 1em;
 }
 
 nav a:hover{
-    color: lightblue;
+    border-top: 0.1em solid white;
+    border-width: auto;
 }
 
-footer{
-    grid-area: footer;
-    background: brown;
+ul{
+    list-style-type: none;
+    text-align: center;
 }
 
 nav ul ul{
     position: absolute;
     display: none;
-    background-color: green;
+    background-color: black;
+    color: white;
     padding: 0;
     width: 100%;
 }
@@ -137,5 +149,43 @@ nav > ul > li{
 
 nav > ul > li:hover ul{
     display: block;
-    margin: 10px;
+    margin: 1em;
+}
+
+footer{
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    letter-spacing: 0.4em;
+}
+
+@media (max-width: 800px){
+    nav{
+        padding: 0.8em;
+        background: black;
+        opacity: 0.5;
+        width: 100%;
+    }
+
+    nav ul{
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        text-align: center;
+        letter-spacing: 0.4em;
+        font-size: 0.5em;
+    }
+
+    .box{
+        width: 60%;
+    }
+
+    .header-left{
+        font-size: 1.5em;
+    }
+    .header-right{
+        width: 100%;
+        font-size: 0.7em;
+    }
+
 }
