@@ -37,16 +37,15 @@ body{
 nav{
     grid-area: nav;
     padding: 1em;
-    background: black;
     opacity: 0.5;
     width: 100%;
 }
 
 nav ul{
     list-style-type: none;
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     letter-spacing: 0.4em;
 }
 
@@ -111,6 +110,24 @@ nav > ul > li:hover ul{
     margin: 1em;
 }
 
+.shownav{
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.shownav .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
 footer{
     color: white;
     font-size: 1em;
@@ -119,18 +136,19 @@ footer{
 }
 
 @media (max-width: 800px){
-    nav{
-        padding: 0.8em;
-        background: black;
-        opacity: 0.5;
+    nav ul{
         width: 100%;
+        flex-direction: column;
+        align-self: flex-start;
+        flex-direction: column;
+        display: none;
     }
 
-    nav ul{
-        list-style-type: none;
-        display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
-        text-align: center;
-        letter-spacing: 0.4em;
-        font-size: 0.5em;
+    .shownav{
+        display: flex;
     }
+
+    nav li{
+        text-align: center;
+    }
+}
