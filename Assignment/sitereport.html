@@ -4,7 +4,7 @@
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial scale-scale-1.0" />
         <title>Sitereport</title>
-        <link rel="stylesheet" href="style.css" media="screen"/>     
+        <link rel="stylesheet" href="sitereport.css" media="screen"/>     
     </head>
     <body>
             <nav>
@@ -29,17 +29,75 @@
                         <li><a href="cv.html">CV</a></li>
                     </ul>
             </nav>
-        <header>
-            <h1>Site Report</h1>
-        </header>   
 
+            <h2 class="grey">Initial thoughts</h2>
+            <p>At first, I didn’t really have a good knowledge on html and CSS as I had done it during sixth form but used videos to guide me through my coursework. When first viewing the lectures, it was like I was learning it from scratch. The whole idea of web development and design and creating websites intrigued me which is the reason I had decided this course. During the lectures as I was learning from scratch again, I was slow in completing the exercises and wouldn’t complete the exercises within a lecture. After a few lectures I started picking up different terms and tags which made me feel more comfortable with coding. </p>
+
+            <h2 class="grey">Learning the basics</h2>
+            <p>When I first started picking up terms and the different tags it made understanding everything else a little easier. However, CSS took me a while to get used to as all the different factors that go into CSS did confuse me as there is so much to consider. But once I started understanding CSS, I was able to start applying to the exercises much easier as well as in my assignment. When I first started the assignment I was a little confused because I used one CSS code for all pages which made me confused as to why when I had written the html codes the pages weren’t displaying to how I wanted and I had later realised that I required separate CSS codes for each web page which made the assignment less confusing.</p>
+
+            <h2 class="grey">Website development</h2>
+            <p>When I started developing my website I didn’t have a clue what I wanted to do or the designs I wanted so I decided to go for an approach where I’d play around with the website layout and different designs as didn’t have a specific design I wanted to implement. I decided to locate the navigation bar at the top of the page as cos I felt the it would look simpler and more appealing and I also considered that it would be easier to implement a drop-down menu if it is along the top. At first, I decided to use a light blue font because my favourite colour is blue. I had a chosen a background of a circuit board to relate to the course. However, later on decided to use white as my font colour instead of the blue as I had also changed the background of the website which was pink and white looked more appealing.</p>
+            <p>The home page was the easiest page to create as it only contained text and no extra features such as images or forms etc. When creating the home page I wanted it to be simple yet appealing so at first I had the text located on the left of the page but didn’t think it was appealing enough therefore moved the text to the middle of the page and also made the alignment centre so it looks more professional. I felt as if it wasn’t appealing enough for me, so I had decided to space the letters out which I was really happy about as it did make it more appealing but yet still simple and the page was not over filled with information. I had carried this style throughout the entire website even with the navigation.</p>
+            <p>For the navigation bar I had used the same style as the home page where the texts are the same font, font colour and the letters are spaced. I had also added the drop-down feature as the portfolio page contains multiple content therefore wanted to make it easier to access specific content within the page using the navigation bar. I have also linked each of the lists in the drop-down menu to the portfolio page as the contents are not linked.</p>
+            <p>The portfolio page wasn’t the most difficult page to create but due to the confusion with the CSS it took longer than it should have as when I put in the images they kept being placed randomly on the page or kept having a big gap between them. This was because display: grid; was applied from the initial CSS stylesheet which caused the images to be placed differently to how I wanted. I later on created a CSS stylesheet just for the portfolio page and created a container which allowed me to create a box in which all the images will be placed in. I also added a description box in which the different modules names were placed in and will later become interactive portfolios in which my work can be kept in. I also added the feature where when hovering over the images the cursor becomes a pointer just to give it the feel that it is interactive. I had played around with design to see what I felt would make the page more appealing. At first, I had added a border around the image and the description box but decided against it as I felt no border looked better. I also adjusted the image so the border radius would be rounded rather than have pointed corners. Every image has the same size gap between each other and are placed in 3 columns which gives the page a professional look.</p>
+            <p>When creating the contact page there was not a specific layout that I had in mind so at first, I had created it so that the form was in the middle of the page and the length of the boxes took up half of the page. Before going with the translucent black background, I had initially chosen to go with transparent background so there would be no visible boxes with just a bottom border to show where to type in information. But I had decided to explore other designs and ultimately went with the black translucent background which I think looked better than the initial idea, so I had decided to go with this. To include personal details, I went with the display: grid; layout to allow the page to be split in two to allow one area for the personal details and the other for the form. An issue that I was having with this page is getting the personal details to be in separate rows. Initially, I had used the <br> tag to separate them into separate rows but then after going over the brief checking whether or not I could use this tag I saw that it said not to use this tag therefore removed them and the details would go back to being on the same rows and couldn’t get them to be in their own rows as you can see the word lorem is in the same row as the email. I had used lorem ipsum text as I didn’t want to use my own address.  However, on the mobile version I was able to place them how I wanted. When my email address is entered it loads up my personal email account.</p>
+            <p>CV page was the most difficult page to create. I had chosen to use the same style for the CV as the input boxes for the form using the black translucent background. I wanted all my pages to be co-ordinated and not just random designs as I didn’t think it would’ve looked appealing. I had separated the header into two sections using display: grid; layout which then I was able to create two heading one being my name the other being my personal details. I had used lorem ipsum text in place of my actual address. I chose to separate each section using headers and a grey line which clearly show the different section which make it look like how a CV should. I had faced the 2 issues with this page one of which I couldn’t resolve. The first issue was that the drop-down of my navigation would appear under the CV and I had tried to fix the issue by applying z-index to the elements and making the CV less of a priority. However, after applying the z-index and playing around with the numbers I still wasn’t able to get the drop-down menu to appear over the CV, so I tried applying z-index to all elements of the CV and navigation, but it still didn’t work. I then decided to change the position of the drop-down so the CV wouldn’t be in the way and the links could be used. So, I changed it from position: absolute; to position: relative; which then allowed the links to appear above the CV instead of over it which allowed me to then use the links. Although this was not the initial plan, I had to make changes in order for it to work. So, I had implemented this to all the pages, so it is consistent throughout and not just for this one page. The second issue was that I was unable to move the CV directly to the centre of the page without messing up the mobile version, so I decided to leave it how it is currently being displayed.</p>
+
+            <h2 class="grey">Reflection</h2>
+            <p>Although I have enjoyed learning html and CSS and learnt a lot during the whole development phase, I feel like have so much more to learn considering the issues that remain with the coding. I wanted to enhance the website more but due to lack of knowledge in CSS couldn’t do much therefore want to continue practicing and developing my current skills and knowledge so that in the future I am able to create a better website.</p>
+
+            <div class="container">
+                <div class="gallery">
+                    <img src="Images/indexhtmlSC.png" alt="main-page">
+                        <div class="desc"> index html validaton</div>
+                </div>
+
+                <div class="gallery">
+                    <img src="Images/stylecssSC.png" alt="main-page-CSS">
+                        <div class="desc"> style CSS validation</div>
+                </div>
+
+                <div class="gallery">
+                    <img src="Images/portfoliohtmlSC.png" alt="portfolio-page">
+                        <div class="desc"> portfolio html validation</div>
+                </div>
         
+                <div class="gallery">
+                    <img src="Images/portfoliocssSC.png" alt="portfolio-page-CSS">
+                        <div class="desc"> portfolio CSS validation</div>
+                </div>
 
+                <div class="gallery">
+                    <img src="Images/contacthtmlSC.png" alt="contact-page">
+                        <div class="desc"> contact html validation</div>
+                </div>
+
+                <div class="gallery">
+                    <img src="Images/contactcssSC.png" alt="contact-page-CSS">
+                        <div class="desc"> contact CSS validation</div>
+                </div>
+
+                <div class="gallery">
+                    <img src="Images/CVhtmlSC.png" alt="CV-page">
+                        <div class="desc"> CV html validation</div>
+                </div>
+
+                <div class="gallery">
+                    <img src="Images/CVcssSC.png" alt="CV-page-CSS">
+                        <div class="desc"> CV CSS validation</div>
+                </div>
+
+                <div class="gallery">
+                    <img src="Images/sitereporthtmlSC.png" alt="sitereport-page">
+                        <div class="desc"> sitereport html validation</div>
+                </div>
         
-
-        <footer>
-            &copyNaseer Uddin 2021
-        </footer>
+                <div class="gallery">
+                    <img src="Images/sitereportcssSC.png" alt="sitereport-page-CSS">
+                        <div class="desc"> sitereport CSS validation</div>
+                </div>
+            </div>
 
     </body>
 

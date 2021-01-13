@@ -3,28 +3,26 @@ body{
     background: url(Images/bg.jpg);
     background-size: cover;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 0.2fr 1.5fr 0.1fr;
-    grid-template-areas: "nav nav nav"
-                         "header header header"
-                         "footer footer footer";
 }
 
-header{
-    grid-area: header;
-    text-align: center;
+h2{
     color: white;
-    font: bolder;
-    font-size: 3em;
-    letter-spacing: 0.5em;
     text-transform: uppercase;
+    text-align: center;
+    font: bold;
 }
 
-header p1{
-    font-size: 0.6em;
-    letter-spacing: 0.3em;
+p{
+    color: white;
+    font-size: 0.9em;
+}
+
+.grey{
+    background: grey;
+    color: white;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    opacity: 0.5;
 }
 
 nav{
@@ -51,7 +49,7 @@ nav > ul > li{
 }
 
 nav ul > li{
-    line-height: 30px;
+    line-height: 1.9em;
 }
 
 nav ul ul{
@@ -77,7 +75,6 @@ nav a{
 
 nav a:hover{
     border-top: 0.1em solid white;
-    border-width: auto;
 }
 
 ul{
@@ -101,24 +98,48 @@ nav > ul > li:hover ul{
     display: none;
     flex-direction: column;
     justify-content: space-between;
-    width: 30px;
-    height: 21px;
+    width: 1.9em;
+    height: 1.3em;
 }
 
 .shownav .bar{
-    height: 3px;
+    height: 0.2em;
     width: 100%;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 0.6em;
 }
 
-footer{
-    color: white;
-    font-size: 1em;
+.container{
+    max-width: 1200px;
+    padding: 1em;
+    padding-left: 3em;
+    margin: auto;
+    background: transparent;
+    overflow: auto;
+}
+.gallery{
+    margin: 0.2em;
+    float: left;
+    width: 24em;
+}
+
+.gallery img{
+    height: 16em;
+    width: 100%;
+    border-radius: 0.3rem;
+}
+
+.gallery img:hover{
+    cursor: pointer;
+}
+
+.desc{
+    padding: 1em;
     text-align: center;
-    letter-spacing: 0.4em;
+    color: white;
+    text-transform: uppercase;
+    font: bold;
 }
-
 @media (max-width: 800px){
     nav ul{
         width: 100%;
@@ -135,13 +156,4 @@ footer{
     nav li{
         text-align: center;
     }
-
-    header{
-        font-size: 2em;
-    }
-
-    header p1{
-        font-size: 0.5em;
-    }
-    
 }

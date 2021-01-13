@@ -1,8 +1,8 @@
 body{
     background: url(Images/bg.jpg);
     background-size: cover;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -39,8 +39,8 @@ body{
 }
 
 input{
-    padding: 10px;
-    margin: 10px;
+    padding: 0.6em;
+    margin: 0.6em;
     width: 70%;
     background-color: black;
     opacity: 0.7;
@@ -54,8 +54,8 @@ input::placeholder{
 }
 
 textarea{
-    padding: 10px;
-    margin: 10px;
+    padding: 0.6em;
+    margin: 0.6em;
     width: 70%;
     background-color: black;
     color: white;
@@ -71,20 +71,20 @@ textarea::placeholder{
 .button{
     width: 30%;
     background: none;
-    padding: 4px;
+    padding: 0.25em;
     outline: none;
     font: 1em;
     font-weight: bold;
     letter-spacing: 0.3em;
     text-align: center;
     cursor: pointer;
-    border: 2px solid white;
+    border: 0.1em solid white;
     color: white;
     align-items: center;
 }
 
 .button:hover{
-    border: 1px solid white;
+    border: 0.1em solid white;
     color: white;
     cursor: pointer;
 }
@@ -113,7 +113,7 @@ nav > ul > li{
 }
 
 nav ul > li{
-    line-height: 30px;
+    line-height: 1.9em;
 }
 
 nav ul ul{
@@ -139,7 +139,6 @@ nav a{
 
 nav a:hover{
     border-top: 0.1em solid white;
-    border-width: auto;
 }
 
 ul{
@@ -163,15 +162,15 @@ nav > ul > li:hover ul{
     display: none;
     flex-direction: column;
     justify-content: space-between;
-    width: 30px;
-    height: 21px;
+    width: 1.9em;
+    height: 1.3em;
 }
 
 .shownav .bar{
-    height: 3px;
+    height: 0.2em;
     width: 100%;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 0.6em;
 }
 
 footer{
@@ -201,7 +200,7 @@ footer{
     .contact-info{
         font-size: 1em;
     }
-    
+
     .contact-form{
         display: block;
         width: 100%;
