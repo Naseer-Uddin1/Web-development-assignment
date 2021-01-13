@@ -1,3 +1,32 @@
+body{
+    margin: 0em;
+    background: url(Images/bg.jpg);
+    background-size: cover;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 0.2fr 1.5fr 0.1fr;
+    grid-template-areas: "nav nav nav"
+                         "header header header"
+                         "footer footer footer";
+}
+
+header{
+    grid-area: header;
+    text-align: center;
+    color: white;
+    font: bolder;
+    font-size: 3em;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+}
+
+header p1{
+    font-size: 0.6em;
+    letter-spacing: 0.3em;
+}
+
 nav{
     grid-area: nav;
     padding: 1em;
@@ -90,24 +119,6 @@ footer{
     letter-spacing: 0.4em;
 }
 
-.shownav{
-    position: relative;
-    top: 0.75rem;
-    right: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-}
-
-.shownav .bar{
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    border-radius: 10px;
-}
-
 @media (max-width: 800px){
     nav ul{
         width: 100%;
@@ -124,4 +135,13 @@ footer{
     nav li{
         text-align: center;
     }
+
+    header{
+        font-size: 2em;
+    }
+
+    header p1{
+        font-size: 0.5em;
+    }
+    
 }

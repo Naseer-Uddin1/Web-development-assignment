@@ -198,6 +198,10 @@ footer{
         text-align: center;
     }
 
+    .contact-info{
+        font-size: 1em;
+    }
+    
     .contact-form{
         display: block;
         width: 100%;
