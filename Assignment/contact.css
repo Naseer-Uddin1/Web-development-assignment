@@ -90,7 +90,6 @@ textarea::placeholder{
 }
 
 nav{
-    grid-area: nav;
     padding: 1em;
     opacity: 0.5;
     width: 100%;

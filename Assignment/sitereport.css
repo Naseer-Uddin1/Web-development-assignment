@@ -140,6 +140,13 @@ nav > ul > li:hover ul{
     text-transform: uppercase;
     font: bold;
 }
+
+footer{
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    letter-spacing: 0.4em;
+}
 @media (max-width: 800px){
     nav ul{
         width: 100%;
