@@ -32,10 +32,10 @@ body{
 }
 
 .contact-info{
-    font-size: 1.5em;
+    font-size: 2em;
     color: white;
     letter-spacing: 0.3em;
-    line-height: 3em;
+    line-height: 2em;
 }
 
 input{
@@ -117,7 +117,7 @@ nav ul > li{
 }
 
 nav ul ul{
-    position: absolute;
+    position: relative;
     display: none;
     background-color: black;
     opacity: 0.5;
@@ -145,15 +145,6 @@ nav a:hover{
 ul{
     list-style-type: none;
     text-align: center;
-}
-
-nav ul ul{
-    position: absolute;
-    display: none;
-    background-color: black;
-    color: white;
-    padding: 0;
-    width: 100%;
 }
 
 nav > ul > li{

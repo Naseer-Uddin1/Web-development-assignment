@@ -26,7 +26,7 @@ nav ul > li{
 }
 
 nav ul ul{
-    position: absolute;
+    position: relative;
     display: none;
     background-color: black;
     opacity: 0.5;
@@ -56,15 +56,6 @@ ul{
     text-align: center;
 }
 
-nav ul ul{
-    position: absolute;
-    display: none;
-    background-color: black;
-    color: white;
-    padding: 0;
-    width: 100%;
-}
-
 nav > ul > li{
     position: relative;
 }
@@ -76,6 +67,31 @@ nav > ul > li:hover ul{
 
 .shownav{
     position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.shownav .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+footer{
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    letter-spacing: 0.4em;
+}
+
+.shownav{
+    position: relative;
     top: 0.75rem;
     right: 1rem;
     display: none;

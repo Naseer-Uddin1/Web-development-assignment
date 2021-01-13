@@ -31,9 +31,7 @@ h2{
     opacity: 0.8;
     width: 70%;
     padding: 1.5em;
-    margin: 2em;
     border-radius: 0.5rem;
-    float: center;
 }
 
 .header{
@@ -103,7 +101,7 @@ nav ul > li{
 }
 
 nav ul ul{
-    position: absolute;
+    position: relative;
     display: none;
     background-color: black;
     opacity: 0.5;
@@ -131,15 +129,6 @@ nav a:hover{
 ul{
     list-style-type: none;
     text-align: center;
-}
-
-nav ul ul{
-    position: absolute;
-    display: none;
-    background-color: black;
-    color: white;
-    padding: 0;
-    width: 100%;
 }
 
 nav > ul > li{
