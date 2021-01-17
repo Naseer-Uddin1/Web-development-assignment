@@ -1,7 +1,7 @@
 body{
     margin: 0em;
     padding-left: 0em;
-    background: url(Images/bg.jpg);
+    background: url(bg.jpg);
     background-size: cover;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
